@@ -32,10 +32,12 @@ Although I certainly concede that taking eight years to realize this has more to
 
 The GitHub site for this project (with all of its flaws intact) is available at:
 
-https://github.com/bsogata/get-the-gold
+<https://github.com/bsogata/get-the-gold>
 
 Other resources for Get the Gold include:
 
+
 [Presentation Slides](https://bsogata.github.io/projects/GetTheGoldPresentation.pdf)
+
 
 [Report](https://bsogata.github.io/projects/GetTheGoldReport.pdf)
