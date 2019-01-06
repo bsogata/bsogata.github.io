@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/get-the-gold.jpg
+image: images/get-the-gold.png
 title: Get the Gold
 permalink: projects/get-the-gold
 # All dates must be YYYY-MM-DD format!
