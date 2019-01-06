@@ -13,7 +13,7 @@ labels:
 summary: An adaptation of the Wumpus World to use a multi-agent environment.
 ---
 
-Get the Gold (an unofficial name) was a project for ICS 461 (Artificial Intelligence) in the Fall 2010 semester.  I worked with Derek Hirano and Mark Munar on this project, which modified the AIMA code from our (textbook)[http://aima.cs.berkeley.edu/] in order to examine a multi-agent environment.  The project code was written entirely in Common Lisp.
+Get the Gold (an unofficial name) was a project for ICS 461 (Artificial Intelligence) in the Fall 2010 semester.  I worked with Derek Hirano and Mark Munar on this project, which modified the AIMA code from our [textbook](http://aima.cs.berkeley.edu/) in order to examine a multi-agent environment.  The project code was written entirely in Common Lisp.
 
 The original AIMA code included an environment called the Wumpus World.  In this world, there was a hero who had to navigate through a matrix to find some gold using only percepts of adjacent cells.  To make the task more difficult, the world could contain pits in which the hero could fall and a stationary monster called a wumpus that would kill the hero if they were in the same cell.  In turn though, the hero carried a single arrow that could be used to kill the wumpus from afar.  This was a single-agent environment: there was one hero and thus only one entity moving around and performing actions.
 
