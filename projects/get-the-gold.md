@@ -31,8 +31,11 @@ In hindsight, this project also demonstrated the importance of quality documenta
 Although I certainly concede that taking eight years to realize this has more to do with my limited intellectual faculties than software engineering, it is nevertheless important to remember that documentation is useless if no one reads it.  Developers are often inclined to look first - and sometimes only - at the source code for documentation, and that is why writing comments within the source code itself is critical.
 
 The GitHub site for this project (with all of its flaws intact) is available at:
+
 https://github.com/bsogata/get-the-gold
 
 Other resources for Get the Gold include:
+
 [Presentation Slides](https://bsogata.github.io/projects/GetTheGoldPresentation.pdf)
+
 [Report](https://bsogata.github.io/projects/GetTheGoldReport.pdf)
