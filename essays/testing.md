@@ -18,24 +18,24 @@ My final solution to [the first Project Euler problem](https://projecteuler.net/
 My solution to [the second Project Euler problem](https://projecteuler.net/problem=2) is available at <https://github.com/bsogata/ProjectEulerTwo/tree/tests-try1>.  My target time here was ten minutes, which in hindsight was overly optimistic.  The biggest problem here was that my original solution to this problem was impossible to test without extensive refactoring, where "extensive refactoring" is defined as "redoing the entire problem."  As it took me just over nine and a half minutes to write the solution to this puzzle in the first place, there was no way that I would be able to rewrite the entire code base and include proper testing in ten minutes.  Consequently, I aborted my first attempt at this after fifteen minutes and spent a few (untimed) minutes writing another solution that would be easier to test.  This also helped to show the need for testing, since my tests failed due to an <code>ArrayOutOfBoundsException</code> when I first ran the tests.
 
 <pre>
-public static int nextFibonacci(List<Integer> numbers) {
-  int next = 1;
-  
-  // If there are not enough numbers to calculate the Fibonacci sequence, add 1 to the list
-  if (numbers.size() < 2) { 
-    numbers.add(next);
-  }
-  
-  // Else the next number is the sum of the last two elements in the list 
-  else {
-    numbers.add(numbers.get(numbers.size() - 1) + numbers.get(numbers.size() - 2));
-    next = numbers.get(numbers.size() - 1);
-  }
+  public static int nextFibonacci(List<Integer> numbers) {
+    int next = 1;
+    
+    // If there are not enough numbers to calculate the Fibonacci sequence, add 1 to the list
+    if (numbers.size() < 2) { 
+      numbers.add(next);
+    }
+    
+    // Else the next number is the sum of the last two elements in the list 
+    else {
+      numbers.add(numbers.get(numbers.size() - 1) + numbers.get(numbers.size() - 2));
+      next = numbers.get(numbers.size() - 1);
+    }
 
-  System.out.format("%d + %d == %d%n", numbers.get(numbers.size() - 3), numbers.get(numbers.size() - 2), numbers.get(numbers.size() - 1));
+    System.out.format("%d + %d == %d%n", numbers.get(numbers.size() - 3), numbers.get(numbers.size() - 2), numbers.get(numbers.size() - 1));
 
-  return next;
-}
+    return next;
+  }
 </pre>
 
 The <code>System.out.format</code> at the end fails when <code>numbers.size()</code> is less than 3; the intent was to print out the value of each Fibonacci value as it was computed, but of course it is impossible to check numbers that do not exist.  I was able to complete my testing and push the changes to GitHub in 12:28.27 this time.

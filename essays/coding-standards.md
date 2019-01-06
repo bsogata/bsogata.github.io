@@ -15,14 +15,14 @@ Of course, trying to search line by line through the source code to find stylist
 
 I started with looking at a particular Java source code file (available at <https://github.com/ics613s15/scribble/blob/master/src/Scribble.java>) and applying the coding standards from <u>Elements of Java Style</u> to it by hand.  After several minutes of looking through the code, I was able to find six violations of the aforementioned standards ranging from poor variable names to missing <code>@Override</code> tags.  Once that was done, I went through the same code with the Checkstyle plugin for IntelliJ IDEA to look for the same coding style violations.  This time, it took a total of 16:22.57 to find a significantly larger number of defects, many of which were automatically fixed through the use of the Checkstyle plugin.  
 
-The updated code is available at <code>https://github.com/bsogata/scribble/blob/master/src/Scribble.java</code>, and the specific differences between this and the original code is available at <code>https://github.com/bsogata/scribble/commit/f50f0d8d4bbf9f7cd034881d5e44a310dbb21bed#diff-980528d6014ed63b6651e8d73a2b4c79</code>.  Since the original code was relatively short and simplistic, it is questionable how much this has improved the readability of the code.  Still, it is worth noting that the general principles of following coding standards will definitely be useful on larger projects.  
+The updated code is available at <https://github.com/bsogata/scribble/blob/master/src/Scribble.java>, and the specific differences between this and the original code is available at <https://github.com/bsogata/scribble/commit/f50f0d8d4bbf9f7cd034881d5e44a310dbb21bed#diff-980528d6014ed63b6651e8d73a2b4c79>.  Since the original code was relatively short and simplistic, it is questionable how much this has improved the readability of the code.  Still, it is worth noting that the general principles of following coding standards will definitely be useful on larger projects.  
 
 As a side note, the only complaint I have about the Checkstyle plugin in IntelliJ IDEA is the way that style violations are indicated: the stylistic defect is highlighted in a yellow or tan color.  The default look and feel for IntelliJ IDEA has a white background as shown here:
 
-<img class="ui image medium centered floated rounded" src="/images/intellij-checkstyle-light.png">
+<img class="ui image medium centered" src="/images/intellij-checkstyle-light.png">
 
 In my old age, it is difficult to actually see what line the defect is on.  Switching to the Darcula look and feel makes the stylistic violation (the <code>else return false</code> line) much more visible:
 
-<img class="ui image medium centered floated rounded" src="/images/intellij-checkstyle-dark.png">
+<img class="ui image medium centered" src="/images/intellij-checkstyle-dark.png">
 
 This is a bit of a usability issue, and while switching the look and feel is not a terribly difficult task this design is not ideal.
