@@ -23,4 +23,5 @@ The web application demonstrates that scraping through the Internet to decide up
 Nonetheless, this project was useful in developing my software engineering skills.  Simply writing code was certainly useful practice.  However, the experience working with a "client" and using pseudo-Agile techniques was arguably more valuable for me.  
 
 The GitHub site for this project is:
-https://github.com/bsogata/ics-624-tourism-routes
+
+<https://github.com/bsogata/ics-624-tourism-routes>

@@ -19,6 +19,7 @@ The goal of the project was to create a system capable of providing notification
 My role in this project was primarily on the database side.  I created models for the courses and users along with their corresponding views and controllers.  Since I already knew how to use Ruby on Rails at this point, the project largely served as a review of those skills.  However, I also used the Nokogiri library to parse the course availability data from the UH website and Rufus to send notification emails to users on a scheduled basis.
 
 The GitHub site for this project is:
-https://github.com/bsogata/course_availability
+
+<https://github.com/bsogata/course_availability>
 
 Since we finished work on this project, the University of Hawaii has changed its course availabilty system to account for this.  Aside from breaking all of the URLs used in the code, these modifications include an official waitlist for students.  This negates the need for this project since students on the waitlist are automatically notified when seats become available.

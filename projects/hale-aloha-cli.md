@@ -20,4 +20,5 @@ Near the end of 2011, Jayson Gamiao, Jason Yeo, and I began work on a command-li
 * [Hale Aloha CLI v2](https://bsogata.github.io/essays/hale-aloha-cli-v2.html)
 
 The project site for our implementation of the Hale Aloha CLI is:
-https://code.google.com/archive/p/hale-aloha-cli-teams/
+
+<https://code.google.com/archive/p/hale-aloha-cli-teams/>
