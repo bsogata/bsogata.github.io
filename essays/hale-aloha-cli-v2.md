@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: Hale Aloha CLI
+title: Hale Aloha CLI v2
 # All dates must be YYYY-MM-DD format!
-date: 2011-11-28
+date: 2011-12-14
 labels:
   - Software Engineering
   - Project Management
