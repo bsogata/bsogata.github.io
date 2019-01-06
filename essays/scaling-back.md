@@ -1,0 +1,22 @@
+---
+layout: essay
+type: essay
+title: Scaling Back
+# All dates must be YYYY-MM-DD format!
+date: 2015-03-25
+labels:
+  - Project Management
+  - ReefNexus
+---
+
+(Editor's Note: The title is probably a horrible attempt at a fish pun.)
+
+I am currently working with [Danny Weng](https://wengdg.github.io/) and [Eric Wu](https://erichmwu.wordpress.com/) on a project to monitor the fish population in the Hawaiian waters.  Fortunately for all parties involved, this does not involve me actually having to go into the water.  Instead, we will be creating a web application that allows users to see how many fish are in a particular region while also inputting data into the system.  Our GitHub site for this project is available at <https://github.com/wengdg/reefnexus>, and we will almost certainly be using [Heroku](https://www.heroku.com/) to host the eventual web application.
+
+Instead of focusing on the specifics of the project though – those are all provided in the README file for the project – this post is about working as part of a group.  Thus far, the division of work has not been formally assigned.  I have done some work with the Google Maps API and thus wrote the code for the map itself, and since Danny was the one who thought of the project idea the design of the mockups naturally reflects his vision for the final application, but for the most part the work thus far has been done as individual project members notice areas that could be improved or issues that have to be addressed.  We have yet to run into any problems with this approach, though certainly as the project becomes more sophisticated we will need a better way of organizing how we work.
+
+There have been technical problems though, mostly revolving around Git.  Initially, we did not have a .gitignore file in the repository.  This was not noticed at first since we were focused on preparing a mockup of the application.  However, while we are all using IntelliJ IDEA as our IDE for this project, we are also all on different computers, and thus user-specific files (storing what tabs were open in the workspace, for instance) were being included in the repository and making it difficult to merge our changes together.  Adding a .gitignore file by itself did not solve the problem as the affected files were still being tracked in Git, so it was necessary to remove the files from Git tracking (sometimes even needing to remove them from the file system entirely).  Since we went through this process at different times while still working on the mockups though, one developer would have made a commit with the IDE files still being tracked through Git just after another had removed those files, and thus the files were reintroduced into the repository repeatedly.  The fact that the .gitignore file did not actually stop Git from trying to track these files was also problematic, though that was due to a formatting error that I did not discover until I was writing this post.  
+
+In fairness to Git, it is entirely possible that we would have had the same problems with SVN.  Regardless of the version control system being used though, it took at least seventeen separate commits to fix the problem with the IDE files, and this issue is really only fixed if all group members make sure to manually stop tracking the files and directories specified in the .gitignore file for this project.  This demonstrates the sort of problems that we could have as a group: rather than working on the mockup or perhaps even beginning development on the actual project, we spent a great deal of time just trying to ensure that Git would let us work on the project.
+
+While working with Git and .gitignore files is certainly troublesome, this project is ultimately an opportunity to further refine my software engineering skills.  As mentioned above, we are all using Git, GitHub, and IntelliJ IDEA; we will soon be adding in the Play framework as well.  In the best case scenario, we will finish this project with a working web application that does something useful for users and a better understanding of software engineering; in the worst case scenario, my cat will have pictures of fish to look at; consequently, there is no need to fear failure when working on this project.

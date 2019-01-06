@@ -1,0 +1,20 @@
+---
+layout: essay
+type: essay
+title: Sleep Deprivation
+# All dates must be YYYY-MM-DD format!
+date: 2015-05-07
+labels:
+  - Project Management
+  - ReefNexus
+---
+
+The past few weeks have taught me that software engineering is about staying up late and passing out on my bedroom floor.  The ReefNexus project is now technically almost ready for release, with a few caveats as noted below.  This does not mean that the project is complete by any means – we have not implemented user authentication yet and need much more user testing, for instance – but the application itself is functional.
+
+As noted in the post introducing ReefNexus, this application aims to provide information about fish populations in the oceans surrounding Hawaii.  Users can select specific regions in Hawaiian waters and see what fish are most common there; users can also update this data if they see particular fish.  The project at this stage meets these criteria with a working Postgres database.  The structure and layout of the application have changed somewhat to accommodate user suggestions and technical requirements, but the basic functionality is present.
+
+On the negative side, the application does not work.  Specifically, we are currently experiencing some difficulties with the Postgres database on Heroku.  The application works perfectly fine on our local machines, but either the database is not configured properly on Heroku or the seed data is not being stored (looking through the database on Heroku with psql indicates that only the Fish database is being populated, with the Location, Coordinate, and join tables completely empty).  The logs on Heroku do not suggest what the problem might be either.  We may end up reverting to where we were before attempting to implement the database and just redo everything from that point on.  In hindsight, it would have been much better to start with a Postgres database instead of using an in-memory database for the majority of the development process and then try to convert everything to work with Postgres at the end; aside from the aforementioned problem with Heroku, this approach necessitated significant modifications to the internal structure of the application as Postgres does not handle the Map data structure and thus we had to create a separate model to store coordinates for locations.
+
+This issue with last minute changes also has an impact in terms of project management.  We set three milestones over the course of the project, three points at which we intended to have working and increasingly more complete iterations of the ReefNexus project.  This approach was fatally flawed because all three of us working on this project are Computer Science students and thus it would have violated the laws of physics for us to actually get anything to work earlier than the night before the milestone was due.  One might argue that we were (supposedly) using Issue Driven Project Management and thus should have been finishing issues every few days; however, due to problems such as the aforementioned need to restructure the data in the application even simple tasks such as "get the Location table to work in Postgres" took much longer than expected.  Although I certainly understand the idea behind using milestones, setting a new milestone every couple of weeks might be the wrong timeframe; admittedly, I am not certain whether it would be better to increase the time between milestones (giving developers more time to procrastinate) or decrease that time (minimizing the distinction between issues and milestones while increasing the likelihood of developer burnout).
+
+We do have our next milestone set a little less than a week from now.  After that, we should have fixed the problems with Postgres on Heroku and addressed some of the usability concerns with the interface.  We have changed the location of our GitHub repository to <https://github.com/reefnexus/reefnexus>, and the (non-functional, and likely to become increasingly dysfunctional over the next few days) deployed site on Heroku is available at <http://www.reefnexus.com/>. 

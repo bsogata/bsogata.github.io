@@ -1,0 +1,27 @@
+---
+layout: essay
+type: essay
+title: Using Bootstrap without Boots
+# All dates must be YYYY-MM-DD format!
+date: 2015-03-03
+labels:
+  - Bootstrap
+---
+
+[Twitter Bootstrap](http://getbootstrap.com/) is a commonly used framework for web development, and given [my previous problems with design](/essays/ui-design-basics) it seemed best to turn to something that would make this design process easier.  Unlike actual bootstraps, Twitter Bootstrap is considerably more difficult to accidentally hang oneself with: the use of classes allows developers to apply Bootstrap anywhere on an HTML page and write CSS rules that override the Bootstrap defaults if necessary.  Once again, I went through a few practice exercises to familiarize myself with Bootstrap as detailed below. 
+
+## Bootstrap + Browser History
+My first task was to re-implement the [Browser History](https://github.com/bsogata/browserhistory) project that I completed when originally practicing HTML and CSS.  This took 10:00.61, and the results are available at <https://github.com/bsogata/browserhistory/tree/bootstrap>.  Doing this was fairly simple and I did not experience any real difficulties.
+
+## Bootstrap + Kamanu
+Next, I attempted to replicate [the website for Kamanu Composites](http://www.kamanucomposites.com/) using Bootstrap along with the Firefox Developer Tools to examine certain CSS rules on the original site.  This also doubled as a half-hearted attempt at therapy for my hydrophobia which (as is true of most attempts at amateur psychology) was unsuccessful.  (Upon further consideration, living on an island surrounded with water might not have been the best idea.)  In contrast though, I was successful in duplicating most elements of the Kamanu website.  The links in the navigation bar at the top look slightly different – a bit more padding above and on the left and right sides of each link would have made the appearance closer to the original – and my reflexes apparently made me type the tagline "We build canoes" in title case, but in general the formatting and layout appears fairly similar.  This process took 29:22.22 and the code is available at <https://github.com/bsogata/responsivekamanu>. 
+
+## Bootstrap + Castle High School
+Finally, I made some minor modifications to [the website for Castle High School](http://castlehs.k12.hi.us/).  I did not attend Castle High School, but a friend of mine<sup>1</sup> who has some interest in web design did.  (Contrary to popular belief, I do have friends somehow.)  Consequently, this could serve as an example of how to use Bootstrap, when to override certain CSS rules, and why I should not be the one in charge of designing web pages.  
+
+This exercise took 37:14.60, though at least seven of those minutes were wasted in attempting to make the central image a background before resorting to the much simpler option of just making an img tag for the image.  The problem was in resolving the path to the image file; my attempts at organizing the files meant that the CSS files and image files were both in subfolders while the HTML file was placed in the root project directory, and using url("images/frontpage.jpg") in the CSS file looked for an images folder that was not present in the directory that the CSS file was in.  Semantically though, it makes more sense for the central section to contain an image than for the image to serve as the background for a div within the div.  
+
+The layout is far from perfect – the banner image does not extend across the entire width of the page, though it is difficult to think of how that might be fixed since stretching and repeating the banner would arguably be worse; the sections are not aligned vertically; there is no space between the sections – but is at least functional and readable.  The repository for this exercise is available at <https://github.com/bsogata/responsivecastlehigh>. 
+
+## Conclusion
+For the most part, my experience with Twitter Bootstrap thus far has been positive.  This framework definitely makes creating layouts significantly easier, and the degree of polish and cohesion in the graphical appearance of the elements far exceeds anything that I could produce.  My only real issues with Bootstrap have more to do with semantics.  The use of classes makes Bootstrap incredibly flexible, and that in and of itself is a good thing.  However, this flexibility also encourages developers to use div tags for pretty much everything, even when there are other more semantically correct tags available – the navbar used in the Browser History and Kamanu examples above used a div tag, but HTML5 has a [nav tag](http://www.w3schools.com/TAgs/tag_nav.asp) that clearly indicates what the component does without the need to add classes to the element.  Bootstrap also has a lot of default values in regards to the formatting of elements, and while this is often beneficial as it standardizes the formatting (and there are alternatives such as [Bootswatch](http://bootswatch.com/) to change the theme of a page), it can be difficult to override these defaults when needed due to the precedence rules in CSS and perhaps not even knowing what rules one needs to change.  Admittedly, this is a problem for frameworks in general, not just Bootstrap.  Overall though, Bootstrap is definitely a useful tool, and one that I will continue using.
