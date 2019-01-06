@@ -6,7 +6,7 @@
     "email": "branden.s.ogata@gmail.com",
     "phone": "",
     "website": "https://bsogata.github.io",
-    "summary": "I am studying for a M.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate at some point in the future.",
+    "summary": "I am currently working on my master's degree in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate at some point in the future.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -35,6 +35,11 @@
     },
     {
       "name": "human computer interaction",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "programming language theory",
       "keywords": [
       ]
     }
