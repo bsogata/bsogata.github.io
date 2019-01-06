@@ -9,7 +9,7 @@ labels:
   - Data Modeling
 ---
 
-With all the time spent on the ReefNexus project, I decided to work on something comparatively less intensive this past week and experimented with the Lucid Charts plugin for Google Docs.  Amongst a multitude of other features, Lucid Charts allows users to easily draw ER diagrams, and since we will likely be setting up an actual database for ReefNexus in the near future it makes sense for us to have a way to represent the models and relationships within the database.  As usual, I went through a couple of brief exercises to learn how to use the software.
+With all the time spent on the ReefNexus project, I decided to work on something comparatively less intensive this past week and experimented with the Lucidchart plugin for Google Docs.  Amongst a multitude of other features, Lucidchart allows users to easily draw ER diagrams, and since we will likely be setting up an actual database for ReefNexus in the near future it makes sense for us to have a way to represent the models and relationships within the database.  As usual, I went through a couple of brief exercises to learn how to use the software.
 
 ## Library Model
 <img class="ui image medium right floated rounded" src="/images/erd-library.png">
@@ -48,4 +48,4 @@ Return a vehicle | Find the Vehicle, then update the mileage (odometer), gas (wh
 Despite the additional complexity, this took less time than the previous exercise and I finished in 11:25.58.  
 
 ## Conclusion
-Lucid Charts is a very useful and usable tool: it fulfills its purpose and does so in a clean, elegant manner.  I make no claims as to the correctness of the models that I made above (there are very good reasons why I am not a database administrator), but correcting any mistakes would be a very simple task using Lucid Charts.   The lack of explicit data types in the experiments I performed here may be confusing (especially with the type field that I repeatedly used), but I believe Lucid Charts does offer the option to create boxes with multiple columns, so in future I might put the field name in one column and the intended data type in another.  Thinking of (good) names for entities and fields may also be an issue.
+Lucidchart is a very useful and usable tool: it fulfills its purpose and does so in a clean, elegant manner.  I make no claims as to the correctness of the models that I made above (there are very good reasons why I am not a database administrator), but correcting any mistakes would be a very simple task using Lucidchart.   The lack of explicit data types in the experiments I performed here may be confusing (especially with the type field that I repeatedly used), but I believe Lucidchart does offer the option to create boxes with multiple columns, so in future I might put the field name in one column and the intended data type in another.  Thinking of (good) names for entities and fields may also be an issue.
