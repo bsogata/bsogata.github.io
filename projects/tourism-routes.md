@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/tourism-routes.jpg
+image: images/tourism-routes.png
 title: Tourism Routes
 permalink: projects/tourism-routes
 # All dates must be YYYY-MM-DD format!
