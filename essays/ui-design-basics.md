@@ -13,19 +13,19 @@ After spending the past few weeks reviewing a number of different Java-centric t
 
 ## (Mostly) HTML
 
-<img class="ui image medium centered floated rounded" src="/images/e26.png">
+<img class="ui image medium centered" src="/images/e26.png">
 
 The first task I worked on was making an HTML page containing short descriptions of the three major web browsers.  My attempts to make a joke about the recursive nature of reading about Firefox in Firefox have failed.  This process (making the HTML page, not failing to develop a joke) took 15:42.04 to complete, and the code is available at <https://github.com/bsogata/browserhistory>.  This took slightly longer than I had expected, but in hindsight laying the foundation for the page does require a fair amount of time, at least if the page is to be any good.  This is not pure HTML though; I did use a little bit of CSS in order to resize the images used.
 
 ## HTML + CSS
 
-<img class="ui image medium centered floated rounded" src="/images/e27.png">
+<img class="ui image medium centered" src="/images/e27.png">
 
 I then continued on to fully implement CSS styles into the page.  This took 5:52.34, during which I apparently thought it best to move away from Times New Roman (the One True Font) in favor of using [Google Fonts](http://www.google.com/fonts), felt that ivory was different enough from white to make it worth changing the default background color, and managed to make Internet Explorer crash.  This work was done on a separate branch at <https://github.com/bsogata/browserhistory/tree/css-1>. 
 
 ## HTML + More CSS
 
-<img class="ui image medium centered floated rounded" src="/images/e28.png">
+<img class="ui image medium centered" src="/images/e28.png">
 
 Finally, I added in CSS that changed the layout of elements on the page rather than simply modifying the appearance of those elements.  This mostly goes to show that I am a programmer and not a designer; a navbar is a common design pattern but does not seem to be all that useful when all the links point to elements on the same horizontal level, I managed to use percentile measurements for the navigation elements but not for the three columns, and so forth.  Admittedly, I would not have been able to complete this in 6:28.85 if I had conducted a proper usability study with interviews and user-task matrices.  The resulting code is available at <https://github.com/bsogata/browserhistory/tree/columns-1>.
 

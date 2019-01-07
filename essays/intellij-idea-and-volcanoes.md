@@ -48,4 +48,4 @@ My solution is available at <https://github.com/bsogata/ProjectEulerThree>.  Thi
 In hindsight, I probably should have read the requirements for each problem before trying to set a reasonable timeframe in which to complete the exercise.  Volcanic ash makes it difficult to think rationally.  That aside, I am a little more comfortable with IntelliJ IDEA now, enough to continue using it for the time being.  
 
 
-1. Do not actually destroy the volcanoes on the Big Island now.  Wait until I am somewhere safe on the mainland first.
+1: Do not actually destroy the volcanoes on the Big Island now.  Wait until I am somewhere safe on the mainland first.
