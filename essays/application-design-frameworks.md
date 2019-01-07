@@ -14,7 +14,7 @@ At long last, I have finally started using the [Play Framework](https://playfram
 ## A Simple Play Project 
 First of course, I had to install and set up Play.  As might be expected, this configuration took a very long time, was fraught with errors, and was not counted in the elapsed time for this exercise.  Setting up the PATH on my Windows machine to work with [Typesafe Activator](http://typesafe.com/community/core-tools/activator-and-sbt) was unusually difficult as I was unable to put the directories for Activator and [SWI-Prolog](http://www.swi-prolog.org/) in the PATH simultaneously for reasons unknown; on the positive side, this gives me an excuse to not have to use Prolog ever again<sup>1</sup>.
 
-<img class="ui image medium centered floated rounded" src="/images/project-auto-import.png">
+<img class="ui image medium centered" src="/images/project-auto-import.png">
 
 Once Play was configured, I started my timer and began to set up a simple Play project in IntelliJ IDEA.  Since this was my first time doing so, IntelliJ required a fair amount of time to load all of the necessary libraries and such; I also learned that it was necessary to check the *Use auto-import* check box during project setup to properly import all of the libraries for Play.  Still, it ultimately took me only 20:38.26 to finish this the first time through, much of which was due to the aforementioned configuration and an unusual and unreproducible error where moving the testing code into a <code>test</code> package broke all of the references to other files in the project.
 
@@ -33,7 +33,6 @@ Oddly, the .idea directory is still present in this repository despite the fact 
 
 ## Multi-Page Browser History
 I then built upon the previous experience to redo [the multi-page layout for the Browser History project](https://github.com/bsogata/browserhistory/tree/multipage).  This was slightly more time-consuming due to the need to create separate pages for each browser reviewed: it is necessary to make the project again in order to have Play create the Java class corresponding to a particular view, and since I had to make multiple pages I ended up waiting a fair amount of time for the build process to complete.  In the end though, this took 23:39.09, and the resulting branch on GitHub is at <https://github.com/bsogata/playbootstrapbrowserhistory/tree/multipage-1>.
-
 
 ## Kamanu
 Finally, I converted [my previous work on replicating the Kamanu Composites website into a Play project](https://github.com/bsogata/responsivekamanu).  This was actually a bit easier than the previous exercise since there was only one page to tend to and working with images was the only new topic I had to address.  This took 17:51.99, and my repository for this exercise is available at <https://github.com/bsogata/playresponsivekamanu>.

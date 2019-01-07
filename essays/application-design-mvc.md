@@ -14,11 +14,11 @@ As mentioned in my previous post, my next goal with the [Play Framework](https:/
 ## Initial Mockup
 I started with a simple application consisting of two pages: an index page containing a table with contact information for various imaginary persons
 
-<img class="ui image medium centered floated rounded" src="/images/e41-index.png">
+<img class="ui image medium centered" src="/images/e41-index.png">
 
 and another page on which to input new contacts.
 
-<img class="ui image medium centered floated rounded" src="/images/e41-newContact.png">
+<img class="ui image medium centered" src="/images/e41-newContact.png">
 
 This did not require anything beyond what I had done previously, though creating a form in Bootstrap was somewhat new.  In that respect, the fact that this took 21:38.24 is somewhat disappointing, though I suppose the initial setup for a project will always take a fair amount of time.  The code for the project at this stage is available at <https://github.com/bsogata/digits/tree/47e7c9cbfeee7498738c5a80a018ee87581fd554>. 
 
@@ -27,7 +27,7 @@ Next, I added the functionality for Play to handle the form through a POST reque
 
 ## Adding (Internal) Validation
 
-<img class="ui image medium centered floated rounded" src="/images/e43-newContact.png">
+<img class="ui image medium centered" src="/images/e43-newContact.png">
 
 The next step was including a means of verifying that the values in the input form were valid.  Although this could be accomplished on the client side, checking the values within the controller is also useful and arguably better (the server side may be assumed to have a better idea of what constitutes a valid value).  This validation occurred in a method placed into the aforementioned backing class.  If any input values were invalid an error message would be displayed and the invalid field would be highlighted in red.  This took 19:29.56 to complete, with the resulting branch available at <https://github.com/bsogata/digits/tree/validate-1>.
 
@@ -53,7 +53,7 @@ The next day, I began a second trial at adding models to the application.  This 
    */
   @Test
   public void renderNewContactTemplate() {
-    Content html = views.html.NewContact.render((Form<ContactFormData>) Form.form(ContactFormData.class));
+    Content html = views.html.NewContact.render((Form&lt;ContactFormData&gt;) Form.form(ContactFormData.class));
     assertThat(contentType(html)).isEqualTo("text/html");
     assertThat(contentAsString(html)).contains("New Contact");
   }

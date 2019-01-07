@@ -30,7 +30,6 @@ Check the reservation history a book | Find all Borrow instances with a type of 
 
 This took 12:39.89 to complete; it did take roughly a minute to download the resulting image to my computer and verify that everything transferred properly into the image shown to the right.  
 
-<img class="ui image medium right floated rounded" src="/images/erd-library.png">
 
 ## Car Rental Model
 <img class="ui image medium right floated rounded" src="/images/ERD-CarRental - ERD.png">
