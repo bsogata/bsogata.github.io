@@ -31,7 +31,7 @@ If the student selects one of the incorrect answers, negative feedback appears:
 
 Questions may have hints; these hints may consist of text or links to external resources:
 
-<img class="ui image medium centered" src="/images/taking_quiz_hint.png">
+<img class="ui image large centered" src="/images/taking_quiz_hint.png">
 
 However, our emphasis for educational purposes is on creating the quizzes.  The interface for this is similar to that for taking the quiz, though with significantly more buttons.  
 
