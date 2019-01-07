@@ -5,7 +5,7 @@ image: images/slippah.png
 title: slippah
 permalink: projects/slippah
 # All dates must be YYYY-MM-DD format!
-date: 2019-01-05
+date: Ongoing
 labels:
   - Ruby on Rails
   - AJAX
