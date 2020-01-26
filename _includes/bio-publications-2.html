@@ -5,6 +5,7 @@
 {% assign hasWorkshop = false %}
 {% assign hasTechReport = false %}
 {% assign hasThesis = false %}
+{% assign hasBookChapter = false %}
 {% for entry in site.data.bio.publications %}
   {% if entry.type == "journal" %}
      {% assign hasJournal = true %}
@@ -16,6 +17,8 @@
     {% assign hasTechreport = true %}
   {% elsif entry.type == "thesis" %}
     {% assign hasThesis = true %}
+  {% elsif entry.type == "bookchapter" %}
+    {% assign hasBookChapter = true %}
   {% endif %}
 {% endfor %}
 
@@ -120,6 +123,27 @@
       </p>
       <p class="ui no-bottom">{{ entry.summary }}</p>
     {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if hasBookChapter %}
+<div class="sixteen wide column no-bottom">
+  <h3 class="ui left aligned header no-bottom">Book Chapters</h3>
+  <hr style="margin: 0px;">
+</div>
+
+<div class="sixteen wide column no-bottom">
+  {% for entry in site.data.bio.publications %}
+  {% if entry.type == "bookchapter" %}
+  <p class="ui no-bottom">
+    <b>{{ entry.name }}</b>{% if entry.author and entry.author != "" %}, {{ entry.author }}{% endif %}, <em>{{ entry.publisher }}</em>, {{ entry.releaseDate }}
+    {% if entry.website %}
+  <p class="ui no-bottom"><a href="{{ entry.website }}">{{ entry.website | remove: "http://" | remove: "https://" }}</a></p>
+  {% endif %}
+  </p>
+  <p class="ui no-bottom">{{ entry.summary }}</p>
+  {% endif %}
   {% endfor %}
 </div>
 {% endif %}

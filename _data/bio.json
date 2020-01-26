@@ -104,13 +104,29 @@
       "position": "Teaching Assistant",
       "website": "",
       "startDate": "2014-01-06",
-      "endDate": "Present",
+      "endDate": "2019-12-17",
       "summary": "Teaching assistant for a variety of undergraduate Computer Science courses",
       "highlights": [
         "Managing lab sessions for programming courses",
         "Working with students",
         "Grading student work"
       ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "\"Flip-Flop\" Learning by Teaching Methodologies: \"Peer Improvement\", \"Agile Tooltip\", Support Technology, and Next Steps",
+      "author": "Jan Stelovsky, Branden Ogata, Umida Stelovska",
+      "type": "conference",
+      "publisher": "Springer International Publishing",
+      "releaseDate": "2018"
+    },
+    {
+      "name": "Constructive Learning by Teaching: Flip-Flop, Peer Evaluation, and Agile Tooltip: Making and Taking Peer Quizzes Synchronized with Lecture Screencasts",
+      "author": "Jan Stelovsky, Michael-Brian Ogawa, Branden Ogata, Umida Stelovska",
+      "type": "bookchapter",
+      "publisher": "Springer International Publishing",
+      "releaseDate": "2018"
     }
   ],
   "references": [
