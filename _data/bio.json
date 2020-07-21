@@ -6,7 +6,7 @@
     "email": "branden.s.ogata@gmail.com",
     "phone": "",
     "website": "https://bsogata.github.io",
-    "summary": "I am currently working on my master's degree in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate at some point in the future.",
+    "summary": "I am currently working on my Ph.D. in Communication and Information Sciences at the University of Hawaii. I expect to graduate at some point in the future.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -89,9 +89,19 @@
     },
     {
       "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (ongoing)",
+      "area": "Computer Science (2020)",
       "studyType": "M.S.",
       "startDate": "2013-08-26",
+      "endDate": "2020-05-16",
+      "gpa": "",
+      "courses": [
+      ]
+    },
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Communication and Information Sciences (present)",
+      "studyType": "Ph.D.",
+      "startDate": "2020-08-24",
       "endDate": "Present",
       "gpa": "",
       "courses": [
@@ -127,6 +137,13 @@
       "type": "bookchapter",
       "publisher": "Springer International Publishing",
       "releaseDate": "2018"
+    },
+    {
+      "name": "Flip-Flop Quizzes: A Case Study Analysis to Inform the Design of Augmented Cognition Applications",
+      "author": "Branden Ogata, Jan Stelovsky, Michael-Brian Ogawa",
+      "type": "conference",
+      "publisher": "Springer International Publishing",
+      "releaseDate": "2020"
     }
   ],
   "references": [
